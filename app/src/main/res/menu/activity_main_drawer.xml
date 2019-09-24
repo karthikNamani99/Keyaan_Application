@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/vendor_details"
+            android:icon="@drawable/move"
+            android:title="@string/vendor_details" />
+        <item
+            android:id="@+id/vendor_services"
+            android:icon="@drawable/move"
+            android:title="@string/vendor_services" />
+        <item
+            android:id="@+id/vendor_orders"
+            android:icon="@drawable/move"
+            android:title="@string/vendor_orders" />
+        <item
+            android:id="@+id/vendor_venues"
+            android:icon="@drawable/move"
+            android:title="@string/vendor_venues" />
+
+        <item
+            android:id="@+id/vendor_booked_venues"
+            android:icon="@drawable/move"
+            android:title="@string/vendor_booked_venues" />
+
+        <item
+            android:id="@+id/vendor_catering_category"
+            android:icon="@drawable/move"
+            android:title="@string/vendor_catering_category" />
+        <item
+            android:id="@+id/vendor_catering_sub_category"
+            android:icon="@drawable/move"
+            android:title="@string/vendor_catering_sub_category" />
+        <item
+            android:id="@+id/vendor_products"
+            android:icon="@drawable/move"
+            android:title="@string/vendor_products" />
+        <item
+            android:id="@+id/vendor_catering_packages"
+            android:icon="@drawable/move"
+            android:title="@string/vendor_catering_packages" />
+
+
+    </group>
+
+
+
+</menu>

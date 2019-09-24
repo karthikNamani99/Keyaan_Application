@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="User Name"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/company_name"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter User name"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Order Id"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/customer_name"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Order Id"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Total Amount"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/register_office_address_line1"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Total Amount"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Advance Amount"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/register_office_address_line2"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Advance Amount"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/theme_blue_primary"
+            android:text="Done"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+</LinearLayout>

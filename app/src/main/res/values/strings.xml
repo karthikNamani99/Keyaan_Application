@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Keyaan</string>
+
+    <string-array name="categorytypes" >
+        <item>Select Category</item>
+        <item>Artist Management</item>
+        <item>Audio Visual Equipment Rentals</item>
+        <item>Bands and Dhols</item>
+        <item>Beauty Services</item>
+        <item>Beverages</item>
+    </string-array>
+
+    <string-array name="subcategorytypes" >
+        <item>Select Subcategory</item>
+        <item>All </item>
+        <item>Anchoring and Hosting</item>
+        <item>Birthday/ Personal Photography and Videography</item>
+        <item>Christian Events</item>
+        <item>Comedy Artists</item>
+    </string-array>
+    <string-array name="subsubcategorytypes" >
+        <item>Select SubSubcategory</item>
+        <item>All </item>
+        <item>Anchoring and Hosting</item>
+        <item>Birthday/ Personal Photography and Videography</item>
+        <item>Christian Events</item>
+        <item>Comedy Artists</item>
+    </string-array>
+    <string-array name="cities" >
+        <item>Select City</item>
+        <item>HyderaBad </item>
+        <item>Secunderabad</item>
+        <item>Warangal</item>
+        <item>Karimnagar</item>
+        <item>Kukatpalli</item>
+        <item>Lingampalli</item>
+        <item>Abids</item>
+        <item>Koti</item>
+        <item>Ameerpet</item>
+        <item>Hitechcity</item>
+        <item>Jublihills</item>
+    </string-array>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="sick_leave">Employee can avail in case of sickness of self or relative (as specified under law).</string>
+    <string name="casual_leave">These are granted for certain unforeseen situation or where you are require to go for one or two days leaves.</string>
+    <string name="rh">Optional holiday for each individual employee and each employee can decide whether he/she wants to take a leave on that day or not.</string>
+    <string name="od">Deputation on official work, training, local holiday, etc.</string>
+    <string name="mat">A period of absence from work granted to a mother before and after the birth of her child.</string>
+    <string name="pat">Paternity leave help fathers to be present during and few days after the birth of the child and thus helps in fostering father-child attachment.</string>
+    <string name="compoff">This is a time off that is granted to a worker as compensation for working overtime.</string>
+
+    <string name="vendor_details">Vendor Details</string>
+    <string name="vendor_services">Service</string>
+    <string name="vendor_orders">Order</string>
+    <string name="vendor_venues">Venues</string>
+    <string name="vendor_booked_venues">Booked Venues</string>
+    <string name="vendor_catering_category">Catering Category</string>
+    <string name="vendor_catering_sub_category">Catering Sub Category</string>
+    <string name="vendor_products">Products</string>
+    <string name="vendor_catering_packages">Catering Packages</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Vendor Details</item>
+        <item>Service</item>
+        <item>Order</item>
+        <item>Venues</item>
+        <item>Booked Venues</item>
+        <item>Catering Category</item>
+        <item>Catering Sub Category</item>
+        <item>Products</item>
+        <item>Catering Packeges</item>
+    </string-array>
+
+</resources>

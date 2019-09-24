@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_120sdp"
+           android:padding="@dimen/dimen_25">
+
+            <ImageView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/logo_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyle_Title"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:text="Email"
+                    android:textColor="@color/jet_black" />
+
+                <EditText
+                    android:id="@+id/input_userid"
+                    style="@style/Edittext_Editable"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:hint="Enter GSTN"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/Color_Gray"
+                    android:text="sagar@gmail.com"
+                    android:textColor="@color/black"
+                    android:outlineProvider="bounds"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyle_Title"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:text="Password"
+                    android:textColor="@color/jet_black" />
+
+                <EditText
+                    android:id="@+id/input_password"
+                    style="@style/Edittext_Editable"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:hint="Enter GSTN"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/Color_Gray"
+                    android:text="12345678"
+                    android:textColor="@color/black"
+                    android:outlineProvider="bounds"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_15sdp" />
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="24dp"
+                android:background="@color/theme_blue_primary"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

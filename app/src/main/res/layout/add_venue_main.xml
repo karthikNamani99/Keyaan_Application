@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Venue Title"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/venue_title"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Venue Title"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextStyle_Title"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:text="Venue SubTitle"
+            android:textColor="@color/jet_black" />
+
+        <EditText
+            android:id="@+id/venue_subtitle"
+            style="@style/Edittext_Editable"
+            android:layout_margin="@dimen/_8sdp"
+            android:hint="Enter Venue SubTitle"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/Color_Gray"
+            android:outlineProvider="bounds"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_15sdp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Select Venue Type"
+                android:textColor="@color/jet_black" />
+
+            <FrameLayout
+                android:id="@+id/layout_venuetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/background_rectangle_stroke">
+
+                <Spinner
+                    android:id="@+id/spnr_venuetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_minus10sdp"
+                    android:alpha="0.9"
+                    android:entries="@array/categorytypes" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Select Facilities"
+                android:textColor="@color/jet_black" />
+
+            <FrameLayout
+                android:id="@+id/layout_facilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/background_rectangle_stroke">
+
+                <Spinner
+                    android:id="@+id/spnr_facilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_minus10sdp"
+                    android:alpha="0.9"
+                    android:entries="@array/subcategorytypes" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Select Venue Areas"
+                android:textColor="@color/jet_black" />
+
+            <FrameLayout
+                android:id="@+id/layout_Venue_Areas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@drawable/background_rectangle_stroke">
+
+                <Spinner
+                    android:id="@+id/spnr_Venue_Areas"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_minus10sdp"
+                    android:alpha="0.9"
+                    android:entries="@array/subsubcategorytypes" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Venue Details"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/venue_details"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Venue Details"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Address"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/address"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Address"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Mobile"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/mobile_number"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Mobile"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Landline Number"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/landline_number"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Landline Number"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Email"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Register Email"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Changing Rooms"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/changing_rooms"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter No.of Changing Rooms"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Morning"
+                android:textColor="@color/jet_black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/in_time"
+                    style="@style/Edittext_Editable"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:hint="Enter In Time"
+                    android:inputType="text"
+                    android:outlineProvider="bounds"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/Color_Gray" />
+                <EditText
+                    android:id="@+id/out_time"
+                    style="@style/Edittext_Editable"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:hint="Enter Out Time"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/Color_Gray"
+                    android:outlineProvider="bounds"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_15sdp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Evening"
+                android:textColor="@color/jet_black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/in_time_evening"
+                    style="@style/Edittext_Editable"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:hint="Enter In Time"
+                    android:inputType="text"
+                    android:outlineProvider="bounds"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/Color_Gray" />
+                <EditText
+                    android:id="@+id/out_time_evening"
+                    style="@style/Edittext_Editable"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:hint="Enter Out Time"
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/Color_Gray"
+                    android:outlineProvider="bounds"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_15sdp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="Land Mark"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/land_mark"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter Land Mark"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_Title"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:text="USP"
+                android:textColor="@color/jet_black" />
+
+            <EditText
+                android:id="@+id/usp"
+                style="@style/Edittext_Editable"
+                android:layout_margin="@dimen/_8sdp"
+                android:hint="Enter USP"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Color_Gray"
+                android:outlineProvider="bounds"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_15sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center|start"
+
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/Rooms_available_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextStyle_Title"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:text="Rooms Available"
+                    android:textColor="@color/jet_black" />
+
+
+
+                <RadioButton
+                    android:id="@+id/roomsavailble_Yes_RadioButton"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:paddingLeft="5dp"
+                    android:text="Yes"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/roomsavailable_No_RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:buttonTint="@color/colorPrimary"
+                    android:paddingLeft="5dp"
+                    android:text="No"
+                    android:textColor="@color/black" />
+
+
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center|start"
+
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/Catering_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextStyle_Title"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:text="Catering"
+                    android:textColor="@color/jet_black" />
+
+
+
+                <RadioButton
+                    android:id="@+id/catering_Yes_RadioButton"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:paddingLeft="5dp"
+                    android:text="Yes"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/catering_No_RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:buttonTint="@color/colorPrimary"
+                    android:paddingLeft="5dp"
+                    android:text="No"
+                    android:textColor="@color/black" />
+
+
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="@dimen/_5sdp">
+
+            <FrameLayout
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/add_image_btn"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:alpha="0.7"
+                    android:background="@drawable/background_text_dark"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:text="Select Image"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed"
+                    app:textAllCaps="false" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/theme_blue_primary"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextStyle_Title1"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_weight="1"
+                android:text="Venue Name"
+                android:gravity="center"
+                android:drawableRight="@drawable/twodots"
+                android:textColor="@color/jet_black" />
+
+
+            <TextView
+                android:id="@+id/venue_name"
+                android:text="Taj Banjara"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/TextStyle_Title1"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextStyle_Title1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Email"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/twodots"
+                android:textColor="@color/jet_black" />
+            <TextView
+                android:id="@+id/email"
+                android:text="admin@gmail.com"
+                android:textColor="@color/black"
+                android:gravity="center"
+                style="@style/TextStyle_Title1"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextStyle_Title1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Mobile"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/twodots"
+                android:textColor="@color/jet_black" />
+            <TextView
+                android:id="@+id/mobile_number"
+                android:text="9876543210"
+                android:textColor="@color/black"
+                android:gravity="center"
+                style="@style/TextStyle_Title1"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="@dimen/_8sdp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
